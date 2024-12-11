@@ -1,0 +1,23 @@
+name: syncer
+
+on:
+  pull_request: {}
+
+jobs:
+  syncer:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # super-linter needs the full git history to get the
+          # list of files that changed across commits
+          fetch-depth: 0
+      - name: Super-linter
+        uses: super-linter/super-linter/slim@v7.2.0 # x-release-please-version
+        env:
+          VALIDATE_CHECKOV: false
+          VALIDATE_SHELL_SHFMT: false
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

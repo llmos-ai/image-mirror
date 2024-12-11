@@ -1,0 +1,9 @@
+ghcr.io/llmos-ai/system-installer-llmos-operator:/^v\d+\.\d+\.\d+(-rc\d+)?$/: llmos-ai-cn-beijing.cr.volces.com/llmos-ai/system-installer-llmos-operator
+ghcr.io/llmos-ai/llmos-operator:/^v\d+\.\d+\.\d+$/: llmos-ai-cn-beijing.cr.volces.com/llmos-ai/llmos-operator
+ghcr.io/llmos-ai/llmos-operator-webhook:/^v\d+\.\d+\.\d+$/: llmos-ai-cn-beijing.cr.volces.com/llmos-ai/llmos-operator-webhook
+ghcr.io/llmos-ai/system-charts-repo:/^v\d+\.\d+\.\d+$/: llmos-ai-cn-beijing.cr.volces.com/llmos-ai/system-charts-repo
+ghcr.io/llmos-ai/llmos-gpu-stack:/^v\d+\.\d+\.\d+$/: llmos-ai-cn-beijing.cr.volces.com/llmos-ai/llmos-gpu-stack
+ghcr.io/llmos-ai/node-upgrade:/^v\d+\.\d+\.\d+$/: llmos-ai-cn-beijing.cr.volces.com/llmos-ai/node-upgrade
+
+docker.io/rancher/system-agent-installer-k3s:/^v(1\.(3[0-9]|[4-9]\d|\d{3,})|2\.\d+)(\.\d+)(-rc\d+|-k3s\d+)?$/: llmos-ai-cn-beijing.cr.volces.com/rancher/system-agent-installer-k3s
+docker.io/rancher/system-agent-installer-rke2:/^v(1\.(3[0-9]|[4-9]\d|\d{3,})|2\.\d+)(\.\d+)(-rc\d+|-rke2r\d+)?$/: llmos-ai-cn-beijing.cr.volces.com/rancher/system-agent-installer-rke2
