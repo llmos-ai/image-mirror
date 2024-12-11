@@ -1,0 +1,3 @@
+llmos-ai-cn-beijing.cr.volces.com:
+  username: "${VOLC_USERNAME}"
+  password: "${VOLC_PASSWD}"
