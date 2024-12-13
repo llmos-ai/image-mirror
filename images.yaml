@@ -4,9 +4,7 @@ ghcr.io/llmos-ai/llmos-operator-webhook:/^v\d+\.\d+\.\d+$/: llmos-ai-cn-beijing.
 ghcr.io/llmos-ai/system-charts-repo:/^v\d+\.\d+\.\d+$/: llmos-ai-cn-beijing.cr.volces.com/llmos-ai/system-charts-repo
 ghcr.io/llmos-ai/llmos-gpu-stack:/^v\d+\.\d+\.\d+$/: llmos-ai-cn-beijing.cr.volces.com/llmos-ai/llmos-gpu-stack
 ghcr.io/llmos-ai/node-upgrade:/^v\d+\.\d+\.\d+$/: llmos-ai-cn-beijing.cr.volces.com/llmos-ai/node-upgrade
-registry.k8s.io/sig-storage/snapshot-controller:v8.0.1,v8.2.0:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-snapshot-controller
-  - ghcr.io/llmos-ai/mirrored-sig-storage-snapshot-controller
+docker.io/rancher/system-agent-installer-k3s:/^v(1\.(30\.(5|\d+)|[3-9]\d*\.\d+)|[2-9]\d*\.\d+\.\d+)(\+k3s\d+)?$/: llmos-ai-cn-beijing.cr.volces.com/rancher/system-agent-installer-k3s
 docker.io/rancher/system-upgrade-controller:v0.14.2:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-rancher-system-upgrade-controller
   - ghcr.io/llmos-ai/mirrored-rancher-system-upgrade-controller
@@ -28,13 +26,27 @@ docker.io/volcanosh/vc-scheduler:v1.10.0:
 docker.io/volcanosh/vc-webhook-manager:v1.10.0:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-volcanosh-vc-webhook-manager
   - ghcr.io/llmos-ai/mirrored-volcanosh-vc-webhook-manager
-quay.io/kuberay/operator:/^v(1\.(2\.[1-9]|\d{2,}|\d+\.\d+)|[2-9]\d*\.\d+\.\d+)$/:
-  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-kuberay-operator
-  - ghcr.io/llmos-ai/mirrored-kuberay-operator
 docker.io/projecthami/volcano-vgpu-device-plugin:/^v(1\.(9\.(4|\d+)|[1-9]\d*\.\d+)|[2-9]\d*\.\d+\.\d+)$/:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-projecthami-volcano-vgpu-device-plugin
   - ghcr.io/llmos-ai/mirrored-projecthami-volcano-vgpu-device-plugin
-docker.io/rancher/system-agent-installer-k3s:/^v(1\.(30\.(5|\d+)|[3-9]\d*\.\d+)|[2-9]\d*\.\d+\.\d+)(\+k3s\d+)?$/: llmos-ai-cn-beijing.cr.volces.com/rancher/system-agent-installer-k3s
-registry.k8s.io/nfd/node-feature-discovery:v0.16.3:
+quay.io/kuberay/operator:/^v(1\.(2\.[1-9]|\d{2,}|\d+\.\d+)|[2-9]\d*\.\d+\.\d+)$/:
+  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-kuberay-operator
+  - ghcr.io/llmos-ai/mirrored-kuberay-operator
+registry.k8s.io/nfd/node-feature-discovery:/^v(0\.(16\.[3-9]|\d+\.\d+)|[1-9]\d*\.\d+\.\d+)$/:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-nfd-node-feature-discovery
   - ghcr.io/llmos-ai/mirrored-nfd-node-feature-discovery
+registry.k8s.io/sig-storage/csi-attacher:/^v(4\.(6\.[1-9]|\d+\.\d+)|[5-9]\d*\.\d+\.\d+)$/:
+  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-csi-attacher
+  - ghcr.io/llmos-ai/mirrored-sig-storage-csi-attacher
+registry.k8s.io/sig-storage/csi-provisioner:/^v(5\.(0\.[1-9]|\d+\.\d+)|[6-9]\d*\.\d+\.\d+)$/:
+  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-csi-provisioner
+  - ghcr.io/llmos-ai/mirrored-sig-storage-csi-provisioner
+registry.k8s.io/sig-storage/csi-resizer:/^v(1\.(11\.[1-9]|\d+\.\d+)|[2-9]\d*\.\d+\.\d+)$/:
+  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-csi-resizer
+  - ghcr.io/llmos-ai/mirrored-sig-storage-csi-resizer
+registry.k8s.io/sig-storage/snapshot-controller:/^v(8\.(0\.[1-9]|\d+\.\d+)|[9-9]\d*\.\d+\.\d+|1[0-9]\d*\.\d+\.\d+)$/:
+  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-snapshot-controller
+  - ghcr.io/llmos-ai/mirrored-sig-storage-snapshot-controller
+registry.k8s.io/sig-storage/csi-node-driver-registrar:/^v(2\.(11\.[1-9]|\d+\.\d+)|[2-9]\d*\.\d+\.\d+)$/:
+  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-csi-node-driver-registrar
+  - ghcr.io/llmos-ai/mirrored-sig-storage-csi-node-driver-registrar
