@@ -5,7 +5,7 @@ ghcr.io/llmos-ai/system-charts-repo:/^v\d+\.\d+\.\d+$/: llmos-ai-cn-beijing.cr.v
 ghcr.io/llmos-ai/llmos-gpu-stack:/^v\d+\.\d+\.\d+$/: llmos-ai-cn-beijing.cr.volces.com/llmos-ai/llmos-gpu-stack
 ghcr.io/llmos-ai/node-upgrade:/^v\d+\.\d+\.\d+$/: llmos-ai-cn-beijing.cr.volces.com/llmos-ai/node-upgrade
 docker.io/rancher/system-agent-installer-k3s:/^v(1\.(30\.(5|\d+)|[3-9]\d*\.\d+)|[2-9]\d*\.\d+\.\d+)(\+k3s\d+)?$/: llmos-ai-cn-beijing.cr.volces.com/rancher/system-agent-installer-k3s
-docker.io/rancher/system-upgrade-controller:v0.14.2:
+docker.io/rancher/system-upgrade-controller:/^(0\.(1[4-9]|[2-9]\d*)\.\d+|[1-9]\d*\.\d+\.\d+)$/:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-rancher-system-upgrade-controller
   - ghcr.io/llmos-ai/mirrored-rancher-system-upgrade-controller
 docker.io/bitnami/os-shell:12-debian-12-r33:
@@ -17,36 +17,39 @@ docker.io/bitnami/redis:7.4.1-debian-12-r2:
 docker.io/rook/ceph:v1.15.3:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-rook-ceph
   - ghcr.io/llmos-ai/mirrored-rook-ceph
-docker.io/volcanosh/vc-controller-manager:v1.10.0:
+docker.io/volcanosh/vc-controller-manager:/^v((1\.(1[0-9]|\d{2,})\.\d+|[2-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-volcanosh-vc-controller-manager
   - ghcr.io/llmos-ai/mirrored-volcanosh-vc-controller-manager
-docker.io/volcanosh/vc-scheduler:v1.10.0:
+docker.io/volcanosh/vc-scheduler:/^v((1\.(1[0-9]|\d{2,})\.\d+|[2-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-volcanosh-vc-scheduler
   - ghcr.io/llmos-ai/mirrored-volcanosh-vc-scheduler
-docker.io/volcanosh/vc-webhook-manager:v1.10.0:
+docker.io/volcanosh/vc-webhook-manager:/^v((1\.(1[0-9]|\d{2,})\.\d+|[2-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-volcanosh-vc-webhook-manager
   - ghcr.io/llmos-ai/mirrored-volcanosh-vc-webhook-manager
-docker.io/projecthami/volcano-vgpu-device-plugin:/^v(1\.(9\.(4|\d+)|[1-9]\d*\.\d+)|[2-9]\d*\.\d+\.\d+)$/:
+docker.io/projecthami/volcano-vgpu-device-plugin:/^v((1\.(9\.\d+|[1-9]\d+\.\d+)|[2-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-projecthami-volcano-vgpu-device-plugin
   - ghcr.io/llmos-ai/mirrored-projecthami-volcano-vgpu-device-plugin
-quay.io/kuberay/operator:/^v(1\.(2\.[1-9]|\d{2,}|\d+\.\d+)|[2-9]\d*\.\d+\.\d+)$/:
+quay.io/kuberay/operator:/^v((1\.(2\.[0-9]+|[3-9]\.\d+|[1-9]\d+\.\d+)|[2-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-kuberay-operator
   - ghcr.io/llmos-ai/mirrored-kuberay-operator
-registry.k8s.io/nfd/node-feature-discovery:/^v(0\.(16\.[3-9]|\d+\.\d+)|[1-9]\d*\.\d+\.\d+)$/:
+registry.k8s.io/nfd/node-feature-discovery:/^(0\.(1[6-9]|[2-9]\d*)\.\d+|[1-9]\d*\.\d+\.\d+)$/:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-nfd-node-feature-discovery
   - ghcr.io/llmos-ai/mirrored-nfd-node-feature-discovery
-registry.k8s.io/sig-storage/csi-attacher:/^v(4\.(6\.[1-9]|\d+\.\d+)|[5-9]\d*\.\d+\.\d+)$/:
+registry.k8s.io/sig-storage/csi-attacher:/^v((4\.(6\.\d+|[7-9]\.\d+|[1-9]\d+\.\d+)|[5-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-csi-attacher
   - ghcr.io/llmos-ai/mirrored-sig-storage-csi-attacher
-registry.k8s.io/sig-storage/csi-provisioner:/^v(5\.(0\.[1-9]|\d+\.\d+)|[6-9]\d*\.\d+\.\d+)$/:
+registry.k8s.io/sig-storage/csi-provisioner:/^v((5\.\d+\.\d+|[6-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-csi-provisioner
   - ghcr.io/llmos-ai/mirrored-sig-storage-csi-provisioner
-registry.k8s.io/sig-storage/csi-resizer:/^v(1\.(11\.[1-9]|\d+\.\d+)|[2-9]\d*\.\d+\.\d+)$/:
+registry.k8s.io/sig-storage/csi-resizer:/^v((1\.(1[1-9]|\d{2,})\.\d+|[2-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-csi-resizer
   - ghcr.io/llmos-ai/mirrored-sig-storage-csi-resizer
-registry.k8s.io/sig-storage/snapshot-controller:/^v(8\.(0\.[1-9]|\d+\.\d+)|[9-9]\d*\.\d+\.\d+|1[0-9]\d*\.\d+\.\d+)$/:
+registry.k8s.io/sig-storage/csi-snapshotter:/^v((8\.\d+\.\d+|[9-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
+  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-csi-snapshotter
+  - ghcr.io/llmos-ai/mirrored-sig-storage-csi-snapshotter
+registry.k8s.io/sig-storage/snapshot-controller:/^v((8\.\d+\.\d+|[9-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-snapshot-controller
   - ghcr.io/llmos-ai/mirrored-sig-storage-snapshot-controller
-registry.k8s.io/sig-storage/csi-node-driver-registrar:/^v(2\.(11\.[1-9]|\d+\.\d+)|[2-9]\d*\.\d+\.\d+)$/:
+registry.k8s.io/sig-storage/csi-node-driver-registrar:/^v((2\.(1[1-9]|\d{2,})\.\d+|[3-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-sig-storage-csi-node-driver-registrar
   - ghcr.io/llmos-ai/mirrored-sig-storage-csi-node-driver-registrar
