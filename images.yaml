@@ -69,5 +69,6 @@ docker.io/rayproject/ray:2.35.0,2.35.0-gpu:
   - ghcr.io/llmos-ai/mirrored-rayproject-ray
 docker.io/rayproject/ray:2.35.0:
   - ghcr.io/llmos-ai/mirrored-rayproject-ray
-docker.io/vllm/vllm-openai:v0.6.4.post1,v0.6.6.post1:
+docker.io/vllm/vllm-openai:v0.6.4.post1,v0.6.6.post1,v0.7.2:
+  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-vllm-vllm-openai
   - ghcr.io/llmos-ai/mirrored-vllm-vllm-openai
