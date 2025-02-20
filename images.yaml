@@ -65,9 +65,7 @@ docker.io/grafana/grafana:10.4.9:
 docker.io/library/nginx:1.24.0-alpine:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-library-nginx
   - ghcr.io/llmos-ai/mirrored-library-nginx
-docker.io/rayproject/ray:2.35.0,2.35.0-gpu:
-  - ghcr.io/llmos-ai/mirrored-rayproject-ray
-docker.io/rayproject/ray:2.35.0:
+docker.io/rayproject/ray:2.42.1,2.42.1-gpu,2.35.0,2.35.0-gpu:
   - ghcr.io/llmos-ai/mirrored-rayproject-ray
 docker.io/vllm/vllm-openai:v0.6.4.post1,v0.6.6.post1,v0.7.2:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-vllm-vllm-openai
