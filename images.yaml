@@ -70,15 +70,15 @@ docker.io/rayproject/ray:2.42.1,2.42.1-gpu,2.35.0,2.35.0-gpu:
 docker.io/vllm/vllm-openai:v0.6.4.post1,v0.6.6.post1,v0.7.2:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-vllm-vllm-openai
   - ghcr.io/llmos-ai/mirrored-vllm-vllm-openai
-docker.io/langgenius/dify-api:0.15.3:
+docker.io/langgenius/dify-api:0.15.3,1.0.0:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-langgenius-dify-api
   - ghcr.io/llmos-ai/mirrored-langgenius-dify-api
-docker.io/langgenius/dify-web:0.15.3:
+docker.io/langgenius/dify-web:0.15.3,1.0.0:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-langgenius-dify-web
   - ghcr.io/llmos-ai/mirrored-langgenius-dify-web
 docker.io/langgenius/dify-sandbox:0.2.10:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-langgenius-dify-sandbox
   - ghcr.io/llmos-ai/mirrored-langgenius-dify-sandbox
-docker.io/langgenius/dify-plugin-daemon:0.0.2-local:
+docker.io/langgenius/dify-plugin-daemon:0.0.2-local,0.0.3-local:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-langgenius-dify-plugin-daemon
   - ghcr.io/llmos-ai/mirrored-langgenius-dify-plugin-daemon
