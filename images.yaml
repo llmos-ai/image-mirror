@@ -14,9 +14,15 @@ docker.io/bitnami/os-shell:12-debian-12-r33:
 docker.io/bitnami/redis:7.4.1-debian-12-r2:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-bitnami-redis
   - ghcr.io/llmos-ai/mirrored-bitnami-redis
-docker.io/rook/ceph:v1.15.3,v1.15.7:
+docker.io/rook/ceph:v1.15.3,v1.15.7,v1.17.2:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-rook-ceph
   - ghcr.io/llmos-ai/mirrored-rook-ceph
+quay.io/cephcsi/cephcsi:v3.14.0:
+  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-cephcsi-cephcsi
+  - ghcr.io/llmos-ai/mirrored-cephcsi-cephcsi
+quay.io/ceph/ceph:v18.2.4:
+  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-ceph-ceph
+  - ghcr.io/llmos-ai/mirrored-ceph-ceph
 docker.io/volcanosh/vc-controller-manager:/^v((1\.(1[0-9]|\d{2,})\.\d+|[2-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-volcanosh-vc-controller-manager
   - ghcr.io/llmos-ai/mirrored-volcanosh-vc-controller-manager
@@ -67,7 +73,7 @@ docker.io/library/nginx:1.24.0-alpine:
   - ghcr.io/llmos-ai/mirrored-library-nginx
 docker.io/rayproject/ray:2.42.1,2.42.1-gpu,2.35.0,2.35.0-gpu:
   - ghcr.io/llmos-ai/mirrored-rayproject-ray
-docker.io/vllm/vllm-openai:v0.6.4.post1,v0.6.6.post1,v0.7.2,v0.8.2:
+docker.io/vllm/vllm-openai:v0.6.4.post1,v0.6.6.post1,v0.7.2,v0.8.5.post1:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-vllm-vllm-openai
   - ghcr.io/llmos-ai/mirrored-vllm-vllm-openai
 docker.io/langgenius/dify-api:0.15.5,1.2.0:
