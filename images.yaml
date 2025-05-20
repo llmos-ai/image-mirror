@@ -20,9 +20,12 @@ docker.io/rook/ceph:v1.15.3,v1.15.7,v1.17.2:
 quay.io/cephcsi/cephcsi:v3.14.0:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-cephcsi-cephcsi
   - ghcr.io/llmos-ai/mirrored-cephcsi-cephcsi
-quay.io/ceph/ceph:v18.2.4:
+quay.io/ceph/ceph:v18.2.4,v19.2.2:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-ceph-ceph
   - ghcr.io/llmos-ai/mirrored-ceph-ceph
+quay.io/csiaddons/k8s-sidecar:v0.12.0:
+  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-csiaddons-k8s-sidecar
+  - ghcr.io/llmos-ai/mirrored-csiaddons-k8s-sidecar
 docker.io/volcanosh/vc-controller-manager:/^v((1\.(1[0-9]|\d{2,})\.\d+|[2-9]\d*\.\d+\.\d+|\d{2,}\.\d+\.\d+))$/:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-volcanosh-vc-controller-manager
   - ghcr.io/llmos-ai/mirrored-volcanosh-vc-controller-manager
