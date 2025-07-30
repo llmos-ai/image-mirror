@@ -81,7 +81,7 @@ docker.io/library/nginx:1.24.0-alpine:
   - ghcr.io/llmos-ai/mirrored-library-nginx
 docker.io/rayproject/ray:2.35.0,2.35.0-gpu:
   - ghcr.io/llmos-ai/mirrored-rayproject-ray
-docker.io/vllm/vllm-openai:v0.6.4.post1,v0.6.6.post1,v0.7.2,v0.8.5.post1:
+docker.io/vllm/vllm-openai:v0.10.0:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-vllm-vllm-openai
   - ghcr.io/llmos-ai/mirrored-vllm-vllm-openai
 docker.io/langflowai/langflow:/^(1\.(5\.[0-9]|[6-9]\.\d+)|1\.[6-9]\.\d+|[2-9]\d*\.\d+\.\d+)(\.post\d+)?$/:
