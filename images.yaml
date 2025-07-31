@@ -19,13 +19,13 @@ docker.io/bitnami/os-shell:12-debian-12-r33:
 docker.io/bitnami/redis:7.4.1-debian-12-r2:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-bitnami-redis
   - ghcr.io/llmos-ai/mirrored-bitnami-redis
-docker.io/rook/ceph:v1.15.3,v1.15.7,v1.17.2:
+docker.io/rook/ceph:v1.17.2:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-rook-ceph
   - ghcr.io/llmos-ai/mirrored-rook-ceph
 quay.io/cephcsi/cephcsi:v3.14.0:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-cephcsi-cephcsi
   - ghcr.io/llmos-ai/mirrored-cephcsi-cephcsi
-quay.io/ceph/ceph:v18.2.4,v19.2.2:
+quay.io/ceph/ceph:v19.2.2:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-ceph-ceph
   - ghcr.io/llmos-ai/mirrored-ceph-ceph
 quay.io/csiaddons/k8s-sidecar:v0.12.0:
@@ -79,18 +79,18 @@ docker.io/grafana/grafana:10.4.9:
 docker.io/library/nginx:1.24.0-alpine:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-library-nginx
   - ghcr.io/llmos-ai/mirrored-library-nginx
-docker.io/rayproject/ray:2.42.1,2.42.1-gpu,2.35.0,2.35.0-gpu:
+docker.io/rayproject/ray:2.35.0,2.35.0-gpu:
   - ghcr.io/llmos-ai/mirrored-rayproject-ray
 docker.io/vllm/vllm-openai:v0.6.4.post1,v0.6.6.post1,v0.7.2,v0.8.5.post1:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-vllm-vllm-openai
   - ghcr.io/llmos-ai/mirrored-vllm-vllm-openai
-docker.io/langflowai/langflow:/^(1\.(4\.[2-9]|\d\.\d+|[5-9]\.\d+)|1\.[5-9]\.\d+|[2-9]\d*\.\d+\.\d+)$/:
+docker.io/langflowai/langflow:/^(1\.(5\.[0-9]|[6-9]\.\d+)|1\.[6-9]\.\d+|[2-9]\d*\.\d+\.\d+)(\.post\d+)?$/:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-langflowai-langflow
   - ghcr.io/llmos-ai/mirrored-langflowai-langflow
-docker.io/langflowai/langflow-frontend:/^(1\.(4\.[2-9]|\d\.\d+|[5-9]\.\d+)|1\.[5-9]\.\d+|[2-9]\d*\.\d+\.\d+)$/:
+docker.io/langflowai/langflow-frontend:/^(1\.(5\.[0-9]|[6-9]\.\d+)|1\.[6-9]\.\d+|[2-9]\d*\.\d+\.\d+)(\.post\d+)?$/:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-langflowai-langflow-frontend
   - ghcr.io/llmos-ai/mirrored-langflowai-langflow-frontend
-docker.io/bitnami/postgresql:17.5.0-debian-12-r6:
+docker.io/bitnami/postgresql:17.5.0-debian-12-r20:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-bitnami-postgresql
   - ghcr.io/llmos-ai/mirrored-bitnami-postgresql
 cr.weaviate.io/semitechnologies/weaviate:/^(1\.30\.(6|[7-9]|\d{2,})|1\.(3[1-9]|[4-9]\d*)\.\d+|[2-9]\d*\.\d+\.\d+)$/:
@@ -108,9 +108,9 @@ docker.io/bitnami/valkey:8.0.2-debian-12-r2:
 docker.io/bitnami/minio:2024.12.18-debian-12-r1:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-bitnami-minio
   - ghcr.io/llmos-ai/mirrored-bitnami-minio
-docker.io/langfuse/langfuse:3.66.1:
+docker.io/langfuse/langfuse:3.82.0:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-langfuse-langfuse
   - ghcr.io/llmos-ai/mirrored-langfuse-langfuse
-docker.io/langfuse/langfuse-worker:3.66.1:
+docker.io/langfuse/langfuse-worker:3.82.0:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-langfuse-langfuse-worker
   - ghcr.io/llmos-ai/mirrored-langfuse-langfuse-worker
