@@ -114,3 +114,18 @@ docker.io/langfuse/langfuse:3.82.0:
 docker.io/langfuse/langfuse-worker:3.82.0:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-langfuse-langfuse-worker
   - ghcr.io/llmos-ai/mirrored-langfuse-langfuse-worker
+nvcr.io/nvidia/gpu-operator:v25.3.0:
+  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-nvidia-gpu-operator
+  - ghcr.io/llmos-ai/mirrored-nvidia-gpu-operator
+nvcr.io/nvidia/cloud-native/gpu-operator-validator:v25.3.0:
+  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-nvidia-gpu-operator-validator
+  - ghcr.io/llmos-ai/mirrored-nvidia-gpu-operator-validator
+nvcr.io/nvidia/k8s/container-toolkit:v1.17.5-ubuntu20.04:
+  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-nvidia-container-toolkit
+  - ghcr.io/llmos-ai/mirrored-nvidia-container-toolkit
+nvcr.io/nvidia/k8s-device-plugin:v0.17.1:
+  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-nvidia-k8s-device-plugin
+  - ghcr.io/llmos-ai/mirrored-nvidia-k8s-device-plugin
+nvcr.io/nvidia/k8s/dcgm-exporter:4.1.1-4.0.4-ubuntu22.04:
+  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-nvidia-dcgm-exporter
+  - ghcr.io/llmos-ai/mirrored-nvidia-dcgm-exporter
