@@ -129,3 +129,21 @@ nvcr.io/nvidia/k8s-device-plugin:v0.17.1:
 nvcr.io/nvidia/k8s/dcgm-exporter:4.1.1-4.0.4-ubuntu22.04:
   - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-nvidia-dcgm-exporter
   - ghcr.io/llmos-ai/mirrored-nvidia-dcgm-exporter
+quay.io/prometheus/alertmanager:v0.27.0:
+  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-prometheus-alertmanager
+  - ghcr.io/llmos-ai/mirrored-prometheus-alertmanager
+quay.io/prometheus-operator/prometheus-config-reloader:v0.78.1:
+  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-prometheus-operator-prometheus-config-reloader
+  - ghcr.io/llmos-ai/mirrored-prometheus-operator-prometheus-config-reloader
+quay.io/kiwigrid/k8s-sidecar:1.28.0:
+  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-kiwigrid-k8s-sidecar
+  - ghcr.io/llmos-ai/mirrored-kiwigrid-k8s-sidecar
+quay.io/prometheus-operator/prometheus-operator:v0.78.1:
+  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-prometheus-operator-prometheus-operator
+  - ghcr.io/llmos-ai/mirrored-prometheus-operator-prometheus-operator
+quay.io/prometheus/node-exporter:v1.8.2:
+  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-prometheus-node-exporter
+  - ghcr.io/llmos-ai/mirrored-prometheus-node-exporter
+quay.io/prometheus/prometheus:v2.55.1:
+  - llmos-ai-cn-beijing.cr.volces.com/llmos-ai/mirrored-prometheus-prometheus
+  - ghcr.io/llmos-ai/mirrored-prometheus-prometheus
